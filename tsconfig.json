@@ -8,7 +8,7 @@
 
     "types": ["jest"],
 
-    "lib": ["ESNext"],
+    "lib": ["es6", "dom"],
 
     "sourceMap": true,
     "declaration": true,
