@@ -6,7 +6,8 @@
     "rootDir": "./src",
     "outDir": "./dist",
 
-    "types": ["node"],
+    "types": ["jest"],
+
     "lib": ["ESNext"],
 
     "sourceMap": true,
