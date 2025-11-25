@@ -28,6 +28,8 @@
  * Only one valid answer exists.
  */
 
+console.log("Running two-sum problem...");
+
 function twoSum(nums: number[], target: number): number[] {
 
     for (let i = 0; i < nums.length; i++) {
