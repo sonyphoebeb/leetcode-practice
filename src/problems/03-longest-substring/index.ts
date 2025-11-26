@@ -12,23 +12,22 @@
 
 
 function lengthOfLongestSubstring(s: string): number {
-    let left = 0;
+    let start = 0;
     let maxLen = 0;
     const seen = new Set<string>();
 
-    for (let right = 0; right < s.length; right++) {
-
-        while (seen.has(s[right])) {
-            seen.delete(s[left]);
-            left++;
+    for (let end = 0; end < s.length; end++) {
+        while (seen.has(s[end])) {
+            seen.delete(s[start]);
+            start++;
         }
-
-        seen.add(s[right]);
-        maxLen = Math.max(maxLen, right - left + 1);
+        seen.add(s[end]);
+        maxLen = Math.max(maxLen, end - start + 1);
     }
 
     return maxLen;
 }
+
 
 // Test
 console.log(lengthOfLongestSubstring("abcabcbb")); // 3
