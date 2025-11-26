@@ -1,7 +1,15 @@
 /**
- * 26-11-2025
- * Longest Substring Without Repeating Characters
+ * 🧠 03 — Longest Substring Without Repeating Characters
+ * 📅 26-11-2025
+ *
+ * Given a string s, find the length of the longest substring without repeating characters.
+ *
+ * Sliding Window Approach:
+ * - Expand window with `right`
+ * - Shrink window with `left` when duplicates appear
+ * - Track characters using a Set
  */
+
 
 function lengthOfLongestSubstring(s: string): number {
     let left = 0;
