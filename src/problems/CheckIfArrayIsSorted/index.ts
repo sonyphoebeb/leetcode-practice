@@ -2,7 +2,6 @@ function checkIfArrayIsSorted(nums: number[]): boolean {
     let asc = true;
     let dsc = true;
 
-    debugger;
     for(let i=0; i<nums.length-1; i++){
         if(nums[i]>nums[i+1]){
             asc = false;
